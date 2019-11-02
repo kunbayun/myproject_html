@@ -1,0 +1,40 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: red;
+}
+#chosen {
+    width: 20px;
+    height:20px;
+}
+
+.container {
+    position: relative;
+
+}
+
+.main-img {
+    width: 600;
+    height: 500;
+    z-index: -1;
+}
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    font-size: 18px;
+    }
+li {
+    list-style-type: none;
+}
+
+#chosen {
+    color: red;
+}
+
