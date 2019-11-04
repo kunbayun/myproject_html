@@ -8,83 +8,89 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-       <ul class="selected">
-          <li class="selected1"><a class="selected2" href="index.html"><b>Home</b></a></li>
-          <li class="selected1"><a class="selected2" href="#about"><b>About</b></a></li>
-          <li class="selected1"><a class="selected2" href="#how-it-works"><b>How it works</b></a></li>
-          <li class="selected1"><a class="selected2" href="#contact-us"><b>Contact us</b></a></li>
-       </ul>
-       <img class="main-img" src="images/easyfood1.jpg" alt="easyfood">
-    </div>
-    <br>
-    <br>
-    <section>
-        <h2 id="about">About</h2>
-            <p class="text-pos"><span class="marked"><b>Easyfood</b></span> is an application
+    <header>
+        <nav>
+            <div class="logo">EasyFood</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2 id="about">About</h2>
+            <p><strong>EasyFood</strong> is an application
             though that we connect our users with delicious unsold food from a variety of shops
             and restaurants all over Europe.
             So come join the world's largest community of waste warriors!</p>
-            <br>
-            <h2>How does it work?</h2>
-            <ul>
-                <li>Download <span class="marked"><b>Easyfood</b></span> on the <a href="https://apps.apple.com/ua/app/apple-store/id375380948?l=ru">Appstore</a></li>
-                <li>Choose your favourite food</li>
-                <li>Come and take it!</li>
-            </ul>
-            <br>
-            <img src="images/Karma-screen.jpg" alt="easyfood-2">
-            <br>
-            <video width="600" height="500" controls>
-            <source src="videos/easyfood_video.mp4" type="video/mp4">
+            <div class="video-pos">
+            <video controls>
+                <source src="videos/easyfood_video.mp4" type="video/mp4">
             </video>
-    </section>
-    <br>
-    <br>
-    <br>
-    <h2 id="how-it-works">What's the deal?</h2>
-        <p class="text-pos">Well, the food that we deal with here at EasyFood is all the delicious,
-        perfectly edible food that stores and restaurants have to throw out
-        at the end of the day. Some great examples of this unsold food is from
-        bakeries that have to bake fresh everyday or restaurants that didn’t sell
-        all the food they had prepared. So we have the pure benefits for the both
-        sides: stores and restaurants reduce their food waste, earn a little extra
-        and meet new customers. And the customers can buy some fresh and
-        tasty food at a discount.</p>
-        <br>
-        <img src="images/easyfood-3.jpg" alt="easyfood-3" width="600" height="500">
-        <br>
-        <br>
-        <br>
+            </div>
+        </article>
+        <article>
+            <h2>How does it work?</h2>
+                <ul>
+                    <li>Download <strong>EasyFood</strong> on the <a href="https://apps.apple.com/ua/app/apple-store/id375380948?l=ru">Appstore</a></li>
+                    <li>Choose your favourite food</li>
+                    <li>Come and take it!</li>
+                </ul>
+            <div class="img-pos">
+            <img src="images/Karma-screen.jpg" alt="App screen">
+            </div>
+        </article>
+        <article>
+            <h2 id="how-it-works">How it works</h2>
+            <p>Well, the food that we deal with here at <strong>EasyFood</strong> is all the delicious,
+            perfectly edible food that stores and restaurants have to throw out
+            at the end of the day. Some great examples of this unsold food is from
+            bakeries that have to bake fresh everyday or restaurants that didn’t sell
+            all the food they had prepared. So we have the pure benefits for the both
+            sides: stores and restaurants reduce their food waste, earn a little extra
+            and meet new customers. And the customers can buy some fresh and
+            tasty food at a discount.</p>
+            <div class="img-pos">
+            <img src="images/easyfood-3.jpg" alt="Food menu">
+            </div>
+        </article>
+    </main>
+
+    <footer>
         <h2 id="contact-us">Contact us</h2>
             <form
                 action="https://formspree.io/mjvbdadl"
                 method="POST">
+                <div class="styling">
                 <input type="text" placeholder="Name of Business" name="name-of-business">
-                <p></p>
                 <input type="text" placeholder="Phone Number" name="phone-number">
-                <p></p>
                 <input type="text" placeholder="Email Address" name="email-address">
-                <br>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
+                </div>
+                <input id="chosen" type="submit" value="Submit">
 
-            <a class="links" href="https://www.facebook.com/toogoodtogoUK/">
-               <img class="chosen" src="images/facebook.png" alt="facebook icon">
+            </form>
+            <div class="social-links">
+            <a href="https://www.facebook.com/toogoodtogoUK/">
+            <img src="images/facebook.png" alt="facebook icon">
             </a>
-            <a class="links" href="https://www.instagram.com/toogoodtogo.dk/">
-               <img class="chosen" src="images/insta.png" alt="instagram icon">
+            <a href="https://www.instagram.com/toogoodtogo.dk/">
+            <img src="images/insta.png" alt="instagram icon">
             </a>
-            <a class="links" href="https://www.youtube.com/channel/UCqqON9Tqcne602Q8FT2G2Bg">
-                <img class="chosen" src="images/youtube.png" alt="youtube icon">
+            <a href="https://www.youtube.com/channel/UCqqON9Tqcne602Q8FT2G2Bg">
+            <img src="images/youtube.png" alt="youtube icon">
             </a>
-            <br>
-            <br>
-            <img src="images/easyfood4.jpg" alt="easyfood4" width="600" height="400">
-            <br>
-            <footer>
-               <p><i>Сopyright 2019, EasyFood</i></p>
-            </footer>
+            </div>
+            <div class="img-pos">
+            <img src="images/easyfood4.jpg" alt="Future partners">
+            </div>
+            <p><i>Сopyright 2019, EasyFood</i></p>
+    </footer>
 </body>
 </html>

@@ -1,67 +1,125 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
+:root {
+    font-family: 'Gentium Book Basic', serif;
+    --main-color: rgb(112, 110, 110);
+
+}
+
+body {
+    max-width: 950px;
+    margin: auto;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+main, footer {
+    font-family: 'Gentium Book Basic', serif;
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+main article {
+    margin-bottom: 70px;
 }
 
 h2 {
-    color: red;
+    color: rgb(222, 60, 51)
 }
-.marked {
-    color:grey;
-    }
-.chosen {
-    width: 25px;
-    height:25px;
-    }
-
-.links {
-    text-decoration: none;
-    position: relative;
-    left: 515px;
-}
-
-.container {
-    position: relative;
-    max.width: 950px;
-    margin: auto;
-    padding: 0;
-
-}
-
-.main-img {
-    position: relative;
-    width: 600px;
-    height: 650px;
-    margin: auto;
-    padding: 0;
-    z-index: -1;
-}
-.selected {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.selected1 {
-    float: left;
-}
-
-.selected2 {
-    display: block;
-    color: red;
+header nav .logo {
+    font-family: 'Squada One', cursive;
+    font-size: 3rem;
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
+    color: rgb(222, 60, 51);
+}
+
+header nav .menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+
+}
+
+header nav .menu a {
     text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+
 }
 
-li a:hover {
-  background-color: lightgray;
+header nav .menu a:hover {
+    color: rgb(222, 60, 51);
 }
 
-h3 {
-    text-align: justify;
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        align-items: center;
+    }
 }
-.text-pos{
-    width: 600px;
+
+header .menu {
+    flex: 1;
 }
+
+header .banner {
+    background-image: url(../images/easyfood1.jpg);
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+main article .video-pos {
+    display: flex;
+    justify-content: center;
+
+}
+
+main article .img-pos {
+    display: flex;
+    justify-content: center;
+
+}
+
+main article p {
+    margin-bottom: 50px;
+
+}
+
+footer form .styling {
+    display: flex;
+    flex-direction: column;
+    margin-right: 700px;
+
+}
+
+footer form #chosen:hover {
+    color: red;
+    }
+
+footer .social-links {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer .img-pos {
+    display: flex;
+}
+
+
+
+
+
+
 
