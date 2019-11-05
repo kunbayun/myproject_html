@@ -9,6 +9,7 @@
 body {
     max-width: 950px;
     margin: auto;
+    text-align: justify;
 }
 
 header {
@@ -73,33 +74,124 @@ header .banner {
     background-size: cover;
 }
 
-main article .video-pos {
+main article .video-layout {
     display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: auto;
+
+}
+
+main article .second-banner {
+    background-image: url(../images/Karma-screen.jpg);
+    min-height: 520px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
     justify-content: center;
 
 }
 
-main article .img-pos {
-    display: flex;
-    justify-content: center;
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 10px 25px;
 
+	background-color: rgb(222, 60, 51);
+	color: white;
+
+	font-family: 'Gentium Book Basic', serif;
+	text-decoration: none;
+	font-size: 0.9em;
+	text-align: center;
+	text-indent: 15px;
 }
+
+.buttonDownload:hover {
+	background-color: rgb(112, 110, 110);
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: rgb(222, 60, 51);
+}
+
+.buttonDownload:hover:after {
+	border-top-color: rgb(222, 60, 51);
+	animation-play-state: running;
+}
+
+@keyframes downloadArrow {
+    0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
 
 main article p {
     margin-bottom: 50px;
 
 }
 
-footer form .styling {
+footer .styling {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin-right: 700px;
 
 }
 
 footer form #chosen:hover {
     color: red;
-    }
+
+}
+
 
 footer .social-links {
     text-decoration: none;
@@ -113,9 +205,31 @@ footer a img {
     height: 30px;
 }
 
-footer .img-pos {
+footer .img-layout {
     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 35px;
+
 }
+
+.logo-name {
+    font-weight: bold;
+}
+
+footer .italics {
+    font-style: italic;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer img #picture {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 
