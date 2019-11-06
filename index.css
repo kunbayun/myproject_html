@@ -3,6 +3,7 @@
 :root {
     font-family: 'Gentium Book Basic', serif;
     --main-color: rgb(112, 110, 110);
+    scroll-behavior: smooth;
 
 }
 
@@ -74,11 +75,9 @@ header .banner {
     background-size: cover;
 }
 
-main article .video-layout {
-    display: flex;
-    justify-content: space-around;
-    max-width: 950px;
-    margin: auto;
+main article #video-layout {
+    display: block;
+    width: 100%;
 
 }
 
@@ -179,15 +178,34 @@ main article p {
 
 }
 
-footer .styling {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-right: 700px;
+main article .img-pos {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 400px;) {
+
+footer .footer-griding{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 
 }
 
-footer form #chosen:hover {
+footer .footer-griding .input-styling {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+footer .footer-griding #footer-img-layout{
+    display: block;
+    width: 100%;
+}
+
+footer .footer-griding form #chosen:hover {
     color: red;
 
 }
@@ -205,13 +223,6 @@ footer a img {
     height: 30px;
 }
 
-footer .img-layout {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 35px;
-
-}
 
 .logo-name {
     font-weight: bold;
@@ -224,10 +235,6 @@ footer .italics {
     justify-content: center;
 }
 
-footer img #picture {
-    display: flex;
-    justify-content: center;
-}
 
 
 

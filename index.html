@@ -30,11 +30,9 @@
             though that we connect our users with delicious unsold food from a variety of shops
             and restaurants all over Europe.
             So come join the world's largest community of waste warriors!</p>
-            <div class="video-layout">
-            <video controls>
+            <video id="video-layout" controls>
                 <source src="videos/easyfood_video.mp4" type="video/mp4">
             </video>
-            </div>
         </article>
         <article>
             <h2>How does it work?</h2>
@@ -57,39 +55,35 @@
             sides: stores and restaurants reduce their food waste, earn a little extra
             and meet new customers. And the customers can buy some fresh and
             tasty food at a discount.</p>
-            <div class="img-pos">
-            <img src="images/easyfood-3.jpg" alt="Food menu">
-            </div>
+            <img src="images/easyfood-3.jpg" alt="Food menu" class="img-pos">
         </article>
     </main>
 
     <footer>
         <h2 id="contact-us">Contact us</h2>
+        <div class="footer-griding">
             <form
-                action="https://formspree.io/mjvbdadl"
-                method="POST">
-            <div class="styling">
-                <input type="text" placeholder="Name of Business" name="name-of-business">
-                <input type="text" placeholder="Phone Number" name="phone-number">
-                <input type="text" placeholder="Email Address" name="email-address">
-            </div>
+              action="https://formspree.io/mjvbdadl"
+            method="POST">
+                <input class="input-styling" type="text" placeholder="Name of Business" name="name-of-business">
+                <input class="input-styling" type="text" placeholder="Phone Number" name="phone-number">
+                <input class="input-styling" type="text" placeholder="Email Address" name="email-address">
                 <input id="chosen" type="submit" value="Submit">
             </form>
-            <div class="img-layout">
-            <img id="picture" src="images/easyfood4.jpg" alt="Future partners">
-            </div>
-            <div class="social-links">
-            <a href="https://www.facebook.com/toogoodtogoUK/">
-            <img src="images/facebook.png" alt="facebook icon">
-            </a>
-            <a href="https://www.instagram.com/toogoodtogo.dk/">
-            <img src="images/insta.png" alt="instagram icon">
-            </a>
-            <a href="https://www.youtube.com/channel/UCqqON9Tqcne602Q8FT2G2Bg">
-            <img src="images/youtube.png" alt="youtube icon">
-            </a>
-            </div>
-            <p><span class="italics">Сopyright 2019, EasyFood</span></p>
+                <img id="footer-img-layout" src="images/easyfood4.jpg" alt="Future partners">
+        </div>
+        <div class="social-links">
+        <a href="https://www.facebook.com/toogoodtogoUK/">
+        <img src="images/facebook.png" alt="facebook icon">
+        </a>
+        <a href="https://www.instagram.com/toogoodtogo.dk/">
+        <img src="images/insta.png" alt="instagram icon">
+        </a>
+        <a href="https://www.youtube.com/channel/UCqqON9Tqcne602Q8FT2G2Bg">
+        <img src="images/youtube.png" alt="youtube icon">
+        </a>
+        </div>
+        <p><span class="italics">Сopyright 2019, EasyFood</span></p>
     </footer>
 </body>
 </html>
