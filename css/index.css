@@ -4,7 +4,6 @@
     font-family: 'Gentium Book Basic', serif;
     --main-color: rgb(112, 110, 110);
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -30,6 +29,7 @@ main article {
 h2 {
     color: rgb(222, 60, 51)
 }
+
 header nav .logo {
     font-family: 'Squada One', cursive;
     font-size: 3rem;
@@ -42,7 +42,6 @@ header nav .menu {
     list-style-type: none;
     justify-content: space-around;
     padding: 0;
-
 }
 
 header nav .menu a {
@@ -50,7 +49,6 @@ header nav .menu a {
     font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--main-color);
-
 }
 
 header nav .menu a:hover {
@@ -78,7 +76,6 @@ header .banner {
 main article #video-layout {
     display: block;
     width: 100%;
-
 }
 
 main article .second-banner {
@@ -89,7 +86,6 @@ main article .second-banner {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .buttonDownload {
@@ -172,10 +168,8 @@ main article .second-banner {
 	}
 }
 
-
 main article p {
     margin-bottom: 50px;
-
 }
 
 main article .img-pos {
@@ -197,7 +191,6 @@ footer .footer-griding .input-styling {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-
 }
 
 footer .footer-griding #footer-img-layout{
@@ -207,15 +200,12 @@ footer .footer-griding #footer-img-layout{
 
 footer .footer-griding form #chosen:hover {
     color: red;
-
 }
-
 
 footer .social-links {
     text-decoration: none;
     display: flex;
     justify-content: space-around;
-
 }
 
 footer a img {
