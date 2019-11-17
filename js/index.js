@@ -1,7 +1,16 @@
- <button onclick="goBack()">Go Back</button>
+var mybutton = document.getElementById("scrollbutton");
 
-<script>
-function goBack() {
-  window.history.back();
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
 }
-</script>
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

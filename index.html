@@ -18,7 +18,6 @@
                 <li><a href="#contact-us">Contact&nbsp;us</a></li>
             </ul>
         </nav>
-        <button onclick="goBack()">Go Back</button>
         <div class="banner">
         </div>
     </header>
@@ -42,6 +41,7 @@
                     <li>Come and take it!</li>
                 </ul>
             <div class="second-banner">
+                <img id="phone-menu" src="images/Karma-screen.jpg" alt="EasyFood menu on phone">
                 <button class="buttonDownload">DOWNLOAD</button>
             </div>
         </article>
@@ -64,7 +64,7 @@
         <div class="footer-griding">
             <form
               action="https://formspree.io/mjvbdadl"
-            method="POST">
+              method="POST">
                 <input class="input-styling" type="text" placeholder="Name of Business" name="name-of-business" style = "width: 80%;">
                 <input class="input-styling" type="text" placeholder="Phone Number" name="phone-number" style = "width: 80%;">
                 <input class="input-styling" type="text" placeholder="Email Address" name="email-address" style = "width: 80%;">
@@ -86,6 +86,9 @@
         </div>
         <p><span class="italics">Сopyright 2019, EasyFood</span></p>
     </footer>
+
+    <button onclick="topFunction()" id="scrollbutton" title="Go to top">&#x2B9D;</button>
+
     <script src="js/index.js"></script>
 </body>
 </html>

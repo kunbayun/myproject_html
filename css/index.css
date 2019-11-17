@@ -53,6 +53,7 @@ header nav .menu a {
 
 header nav .menu a:hover {
     color: rgb(222, 60, 51);
+    transition: all 300ms ease;
 }
 
 @media (min-width: 550px) {
@@ -79,23 +80,27 @@ main article #video-layout {
 }
 
 main article .second-banner {
-    background-image: url(../images/Karma-screen.jpg);
-    min-height: 520px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
+main article .second-banner #phone-menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
 .buttonDownload {
-	display: inline-block;
+	display: block;
 	position: relative;
 	padding: 10px 25px;
-
+    width: 230px;
+    height: 60px;
+    margin-left: auto; 
+    margin-right: auto;
 	background-color: rgb(222, 60, 51);
 	color: white;
-
 	font-family: 'Gentium Book Basic', serif;
 	text-decoration: none;
 	font-size: 0.9em;
@@ -212,7 +217,7 @@ footer .footer-griding form .submit-button{
 }
 
 footer .footer-griding form .submit-button:hover {
-    background: rgb(218, 108, 102);
+    background: rgb(112, 110, 110);
     padding: 15px 30px;
 }
 
@@ -228,7 +233,6 @@ footer a img {
     height: 30px;
 }
 
-
 .logo-name {
     font-weight: bold;
 }
@@ -239,6 +243,26 @@ footer .italics {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+}
+
+#scrollbutton {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 28px;
+    color: white;
+    background-color: rgb(222, 60, 51);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#scrollbutton:hover {
+  background-color: rgb(112, 110, 110);
 }
 
 
