@@ -47,6 +47,7 @@ header nav .menu {
 header nav .menu a {
     text-decoration: none;
     font-size: 1.5rem;
+    font-weight: 500;
     text-transform: uppercase;
     color: var(--main-color);
 }
@@ -67,11 +68,28 @@ header .menu {
     flex: 1;
 }
 
-header .banner {
-    background-image: url(../images/easyfood1.jpg);
-    min-height: 600px;
-    background-position: center;
-    background-size: cover;
+header .video-banner {
+    
+    
+}
+
+header .banner-text {
+    
+}
+
+header .video-banner .video-background {
+    display: block;
+    width: 100%;
+    z-index: -1;
+}
+
+header .store-buttons {
+    text-decoration: none;   
+}
+
+header .store-buttons .button-dimensions {
+    height: 40px; 
+    width: 135px;    
 }
 
 main article #video-layout {
@@ -79,17 +97,9 @@ main article #video-layout {
     width: 100%;
 }
 
-main article .second-banner {
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
-main article .second-banner #phone-menu {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 25px;
+main .carousel-item .image-dimensions {
+    height: 400px;
+    width: 550px;
 }
 .buttonDownload {
 	display: block;

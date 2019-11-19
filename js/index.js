@@ -1,12 +1,12 @@
-var mybutton = document.getElementById("scrollbutton");
+const topButton = document.getElementById("scrollbutton");
 
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
   }
 }
 
