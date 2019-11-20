@@ -9,7 +9,6 @@
 header .body {
     max-width: 950px;
     margin: auto;
-    text-align: justify;
 }
 
 header {
@@ -27,7 +26,14 @@ main article {
 }
 
 h2 {
-    color: rgb(222, 60, 51)
+    color: rgb(222, 60, 51);
+    font-weight: 800;
+    margin-bottom: 35px;
+    font-size: 2.5rem;
+}
+
+main article p {
+    text-align: justify;
 }
 
 header nav .logo {
@@ -38,23 +44,25 @@ header nav .logo {
     text-decoration: none;
 }
 
-header nav .menu {
+header .navbar-nav {
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
-    justify-content: space-around;
+    padding: 0;
+    margin: auto;
+}
+
+header nav .navbar-nav a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--main-color);
+    font-family: 'Gentium Book Basic', serif;
+    margin: 0;
     padding: 0;
 }
 
-header nav .menu a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--main-color);
-    font-family: 'Gentium Book Basic', serif;
-}
-
-header nav .menu a:hover {
+header nav .navbar-nav a:hover {
     color: rgb(222, 60, 51);
     transition: all 300ms ease;
 }
@@ -73,10 +81,29 @@ header .menu {
 header .video-banner {
     
     
+    
 }
 
 header .banner-text {
-    
+    margin-top: -400px;
+    z-index: 1;
+    color: white;
+    width: 100%;
+}
+
+header .banner-text p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8em;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+header .banner-text .promoted-text {
+    font-size: 2.3em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 header .video-banner .video-background {
@@ -86,12 +113,17 @@ header .video-banner .video-background {
 }
 
 header .store-buttons {
-    text-decoration: none;   
+    text-decoration: none; 
+    margin-bottom: 290px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
 }
 
 header .store-buttons .button-dimensions {
     height: 40px; 
-    width: 135px;    
+    width: 135px; 
 }
 
 main article #video-layout {
@@ -107,6 +139,8 @@ main article #video-layout {
     height: 60px;
     margin-left: auto; 
     margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
 	background-color: rgb(222, 60, 51);
 	color: white;
 	font-family: 'Gentium Book Basic', serif;
@@ -204,6 +238,8 @@ footer .footer-griding .input-styling {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    width: 80%;
+    font-size: 1.2rem;
 }
 
 footer .footer-griding #footer-img-layout{
@@ -271,6 +307,7 @@ footer .italics {
 
 #scrollbutton:hover {
   background-color: rgb(112, 110, 110);
+  scroll-behavior: smooth;
 }
 
 
