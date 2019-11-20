@@ -6,7 +6,7 @@
     scroll-behavior: smooth;
 }
 
-body {
+header .body {
     max-width: 950px;
     margin: auto;
     text-align: justify;
@@ -99,10 +99,6 @@ main article #video-layout {
     width: 100%;
 }
 
-main .carousel-item .image-dimensions {
-    height: 400px;
-    width: 550px;
-}
 .buttonDownload {
 	display: block;
 	position: relative;
