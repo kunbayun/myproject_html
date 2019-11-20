@@ -35,6 +35,7 @@ header nav .logo {
     font-size: 3rem;
     text-align: center;
     color: rgb(222, 60, 51);
+    text-decoration: none;
 }
 
 header nav .menu {

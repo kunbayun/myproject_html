@@ -6,18 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EasyFood</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">EasyFood</div>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#how-it-works">How&nbsp;it&nbsp;works</a></li>
-                <li><a href="#contact-us">Contact&nbsp;us</a></li>
-            </ul>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo" href="#">EasyFood</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" class="menu">
+                <ul class="menu">
+                <li class="nav-item active">
+                    <a href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#how-it-works">How&nbsp;it&nbsp;works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-us">Contact&nbsp;us</a>
+                </li>
+                </ul>
+            </div>
         </nav>
+              
         <div class="video-banner">
             <video class="video-background" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
                 <source src="videos/life-of-bread.mp4" type="video/mp4">
@@ -35,7 +50,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <article>
             <h2 id="about">About</h2>
             <p><span class="logo-name">EasyFood</span> is an application
@@ -92,7 +107,7 @@
         </article>
     </main>
 
-    <footer>
+    <footer class="container">
         <h2 id="contact-us">Contact us</h2>
         <div class="footer-griding">
             <form
