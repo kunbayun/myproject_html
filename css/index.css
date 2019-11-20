@@ -51,6 +51,7 @@ header nav .menu a {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--main-color);
+    font-family: 'Gentium Book Basic', serif;
 }
 
 header nav .menu a:hover {
