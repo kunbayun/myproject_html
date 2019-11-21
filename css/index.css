@@ -46,10 +46,11 @@ header nav .logo {
 
 header .navbar-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
     margin: auto;
+    width: 100%;
 }
 
 header nav .navbar-nav a {
@@ -78,12 +79,6 @@ header .menu {
     flex: 1;
 }
 
-header .video-banner {
-    
-    
-    
-}
-
 header .banner-text {
     margin-top: -400px;
     z-index: 1;
@@ -101,6 +96,7 @@ header .banner-text p {
 
 header .banner-text .promoted-text {
     font-size: 2.3em;
+    font-weight: 700;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -117,8 +113,8 @@ header .store-buttons {
     margin-bottom: 290px;
     display: flex;
     justify-content: center;
+    grid-gap: 10px;
     width: 100%;
-
 }
 
 header .store-buttons .button-dimensions {
