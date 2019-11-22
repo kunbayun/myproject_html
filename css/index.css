@@ -61,6 +61,7 @@ header nav .navbar-nav a {
     font-family: 'Gentium Book Basic', serif;
     margin: 0;
     padding: 0;
+    transition: ease-in-out;
 }
 
 header nav .navbar-nav a:hover {
@@ -90,6 +91,7 @@ header .banner-text p {
     display: flex;
     justify-content: center;
     font-size: 1.8em;
+    font-family: 'Gentium Book Basic', serif;
     margin-bottom: 40px;
     width: 100%;
 }
@@ -97,6 +99,7 @@ header .banner-text p {
 header .banner-text .promoted-text {
     font-size: 2.3em;
     font-weight: 700;
+    font-family: 'Gentium Book Basic', serif;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -127,6 +130,11 @@ main article #video-layout {
     width: 100%;
 }
 
+main .users-picture-pos {
+    display: block;
+    width: 100%;
+}
+
 .buttonDownload {
 	display: block;
 	position: relative;
@@ -144,6 +152,8 @@ main article #video-layout {
 	font-size: 0.9em;
 	text-align: center;
 	text-indent: 15px;
+    border-radius: 20px;
+    border-style: none;
 }
 
 .buttonDownload:hover {
@@ -162,7 +172,7 @@ main article #video-layout {
 .buttonDownload:before {
 	width: 10px;
 	height: 2px;
-	border-style: solid;
+	border-style: none;
 	border-width: 0 2px 2px;
 }
 
@@ -252,13 +262,12 @@ footer .footer-griding form .submit-button{
     font-size: 18px;
     font-weight: 600;
     color: white;
-    transition: all 300ms ease;
     margin-bottom: 60px;
 }
 
 footer .footer-griding form .submit-button:hover {
     background: rgb(112, 110, 110);
-    padding: 15px 30px;
+    transition: 800ms ease;
 }
 
 footer .social-links {
@@ -305,13 +314,3 @@ footer .italics {
   background-color: rgb(112, 110, 110);
   scroll-behavior: smooth;
 }
-
-
-
-
-
-
-
-
-
-
